@@ -1,0 +1,319 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap.css">
+  <link rel="stylesheet" href="./mailbox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <title>MailBox</title>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="top-nav d-flex justify-content-between">
+      <div class="logo">
+        <!-- <img src="./logo.png" height="60" width="60"> -->
+        <p>LOGO</p>
+      </div>
+      <div class="right-menu d-flex align-items-center p-1">
+        <div class="active-user">
+          <div class="username">Dr. Durgareddy Kolla(Admin Doctor)</div>
+          <div class="role">ForeFacts Herdon</div>
+        </div>
+        <div class="user-img">DK</div>
+      </div>
+    </div>
+    <div class="app">
+      <div class="side-nav">
+        <div class="menu-item">
+          <i class="fa-solid fa-table-cells-large"></i>
+          <p>Dashboard</p>
+        </div>
+        <div class="menu-item active">
+          <i class="fa-solid fa-user-doctor"></i>
+          <p>OP</p>
+        </div>
+        <div class="menu-item">
+          <i class="fa-solid fa-table-cells-large"></i>
+          <p>ASC</p>
+        </div>
+        <div class="menu-item">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+          <p>Biller</p>
+        </div>
+        <div class="menu-item">
+          <i class="fa-solid fa-warehouse"></i>
+          <p>Inventory</p>
+        </div>
+        <div class="menu-item">
+          <i class="fa-solid fa-gear"></i>
+          <p>Settings</p>
+        </div>
+        <div class="menu-item">
+          <i class="fa-solid fa-user-gear"></i>
+          <p>Admin</p>
+        </div>
+        <div class="menu-item">
+          <i class="fa-solid fa-people-group"></i>
+          <p>CRM</p>
+        </div>
+        <div class="menu-item">
+          <i class="fa-solid fa-people-arrows"></i>
+          <p>Referral</p>
+        </div>
+      </div>
+      <div class="app-container">
+        <div class="folders-bar">
+          <div class="col-md-3 p-1 folders">
+            <!-- All Messages-->
+            <div class="folder-name active">ALL MESSAGES</div>
+            <div class="folder-item active row">
+              <div class="col-md-2">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <div class="col-md-7">Incoming Messages</div>
+              <div class="col-md-3 d-flex justify-content-end">
+                <span class="badge-custom">4</span>
+              </div>
+            </div>
+            <div class="folder-item row">
+              <div class="col-md-2">
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="col-md-7">Starred</div>
+              <div class="col-md-3 d-flex justify-content-end">
+                <span class="badge-custom">4</span>
+              </div>
+            </div>
+            <div class="folder-item row justify-contant-center">
+              <div class="col-md-2">
+                <i class="fa-solid fa-message"></i>
+              </div>
+              <div class="col-md-7">All Messages</div>
+              <div class="col-md-3 d-flex justify-content-end">
+                <span class="badge-custom">4</span>
+              </div>
+            </div>
+            <!--Fax-->
+            <div class="folder-name">FAX</div>
+            <div class="folder-item row">
+              <div class="col-md-2">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <div class="col-md-7">Incoming Fax</div>
+              <div class="col-md-3 d-flex justify-content-end">
+                <span class="badge-custom">4</span>
+              </div>
+            </div>
+            <div class="folder-item row">
+              <div class="col-md-2">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+              <div class="col-md-7">Outgoing Fax</div>
+              <div class="col-md-3 d-flex justify-content-end">
+                <span class="badge-custom">4</span>
+              </div>
+            </div>
+            <!--Referrals-->
+            <div class="folder-name">REFERRALS</div>
+            <div class="folder-item row">
+              <div class="col-md-2">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <div class="col-md-7">Outbound Referrals</div>
+              <div class="col-md-3 d-flex justify-content-end">
+                <span class="badge-custom">4</span>
+              </div>
+            </div>
+            <div class="folder-item row">
+              <div class="col-md-2">
+                <i class="fa-regular fa-user"></i>
+              </div>
+              <div class="col-md-7">Contacts</div>
+              <div class="col-md-3 d-flex justify-content-end">
+                <span class="badge-custom">4</span>
+              </div>
+            </div>
+            <!--Direct Messages-->
+            <div class="folder-name">DIRECT MESSAGES</div>
+            <div class="folder-item row">
+              <div class="col-md-9">Incoming Direct Messages</div>
+              <div class="col-md-3 d-flex justify-content-end">
+                <span class="badge-custom">4</span>
+              </div>
+            </div>
+            <div class="folder-item row">
+              <div class="col-md-9">Outbound Direct Messages</div>
+              <div class="col-md-3 d-flex justify-content-end">
+                <span class="badge-custom">4</span>
+              </div>
+            </div>
+            <!--ERX-->
+            <div class="folder-name">ERX</div>
+            <div class="folder-item row">
+              <div class="col-md-9">Erx Results</div>
+              <div class="col-md-3 d-flex justify-content-end">
+                <span class="badge-custom">4</span>
+              </div>
+            </div>
+            <!--Tasks-->
+            <div class="folder-name">TASKS</div>
+            <div class="folder-item row">
+              <div class="col-md-9">My Tasks</div>
+              <div class="col-md-3 d-flex justify-content-end">
+                <span class="badge-custom">4</span>
+              </div>
+            </div>
+            <div class="folder-item row">
+              <div class="col-md-9">Incoming Messages</div>
+              <div class="col-md-3 d-flex justify-content-end">
+                <span class="badge-custom">4</span>
+              </div>
+            </div>
+            <!--On Patients-->
+            <div class="folder-name">ON PATIENTS</div>
+            <div class="folder-item row">
+              <div class="col-md-9">Online Appointments</div>
+              <div class="col-md-3 d-flex justify-content-end">
+                <span class="badge-custom">4</span>
+              </div>
+            </div>
+            <div class="folder-item row">
+              <div class="col-md-9">Patient Message</div>
+              <div class="col-md-3 d-flex justify-content-end">
+                <span class="badge-custom">4</span>
+              </div>
+            </div>
+            <div class="folder-item row">
+              <div class="col-md-9">Sent Message</div>
+              <div class="col-md-3 d-flex justify-content-end">
+                <span class="badge-custom">4</span>
+              </div>
+            </div>
+          </div>
+          <!--Start of right panel-->
+          <!--Row 1-->
+          <div class="main">
+            <div class="row">
+              <div class="col-md-10 title d-flex align-items-center">
+                Incoming Messages
+              </div>
+              <div class="col-md-2 d-flex justify-content-end">
+                <div class="email-btn">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span>New Email</span>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <!--Row 2-->
+            <div class="row p-1">
+              <div class="col-md-5">
+                <div class="tabs">
+                  <div class="tab">Mark as Read</div>
+                  <div class="tab">Mark as Unread</div>
+                  <div class="tab active">Show Archived</div>
+                </div>
+              </div>
+              <div class="col-md-3"></div>
+              <div class="col-md-4">
+                <div class="search-bar d-flex align-items-center justify-content-between">
+                  <input class="search-input" placeholder="Search Contacts">
+                  <span style="float: right"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+              </div>
+            </div>
+            <!--Row 3-->
+            <div class="split-reader d-flex">
+              <div id="emails">
+                <div class="email active">
+                  <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                  <div><input type="checkbox"></div>
+                  <div><i class="fa-regular fa-star"></i></div>
+                  <div class="user-img">
+                    CV
+                  </div>
+                  <div class="preview">
+                    <div class="subject">Brooklyn Simmons</div>
+                    <div class="message">Simple Transaction Report____</div>
+                  </div>
+                  <div class="timestamp">12:45 PM</div>
+                </div>
+                <!--Other dummy emails inserted by javascript-->
+              </div>
+              <div id="reader" class="p-1 position-relative">
+                <div class="row email-info p-2">
+                  <div class="col-md-1 image d-flex align-items-center justify-content-center">BS</div>
+                  <div class="col-md-8 col-sm-3 metadata">
+                    <div class="from">Brooklyn Simmons</div>
+                    <div class="to">To: Jacob Jones; Marcelo; Mbappe; Schumacher</div>
+                    <div class="cc">cc: Schumacher</div>
+                  </div>
+                  <div class="col-md-3 actions">
+                    <div class="email-actions d-flex justify-content-between">
+                      <i class="fa-solid fa-reply"></i>
+                      <i class="fa-solid fa-reply-all"></i>
+                      <i class="fa-solid fa-share"></i>
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="p-2"></div>
+                    <div class="datetime d-flex justify-content-center">Thu 26/01/2023 05:26</div>
+                  </div>
+                </div>
+                <div class="email-content p-1">
+                  <p class="text">
+                    Dear Dr. X<br>
+                    I am writing to refer my patient, Y to you for further evaluation and treatment. Y is a Z-year-old male/female who has been experiencing W symptoms for V months/weeks/days.<br>
+                    I have performed the following tests and procedures on Y: (list the tests and procedures and their results)<br>
+                    Based on my findings, I suspect that Y may have a condition that requires your expertise. I have attached Y’s medical records and test results for your reference.<br>
+                    Please let me know if you can accept this referral and when you can schedule an appointment for Y. You can reach me at (your phone number) or (your email address) if you have any questions or concerns.<br>
+                    Thank you for your time and attention.
+                  </p>
+                </div>
+                <div class="attachments p-2 d-flex">
+                  <div class="attachment d-flex justify-contant-center align-items-center">
+                    <i class="fa-solid fa-paperclip"></i>
+                    <span>Attachment</span>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <div class="attachment d-flex justify-contant-center align-items-center">
+                    <i class="fa-solid fa-paperclip"></i>
+                    <span>Attachment</span>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <div class="attachment d-flex justify-contant-center align-items-center">
+                    <i class="fa-solid fa-paperclip"></i>
+                    <span>Attachment</span>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                <div class="action-btns d-flex">
+                  <div class="act-btn d-flex justify-contant-center align-items-center">
+                    <i class="fa-solid fa-reply"></i>
+                    <span>Reply</span>
+                  </div>
+                  <div class="act-btn d-flex justify-contant-center align-items-center">
+                    <i class="fa-solid fa-share"></i>
+                    <span>Forward</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="./index.js"></script>
+
+</html>
