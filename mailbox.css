@@ -207,10 +207,11 @@
 }
 
 #emails {
-    max-height: 650px;
+    max-height: calc(100vh - 190px);
     overflow-y: scroll;
     border-right: 1px solid #eee;
     flex-basis: 38%;
+    flex-wrap: wrap;
 }
 
 #reader {
@@ -255,7 +256,6 @@
 }
 
 .email .user-img {
-    background-color: #cccccc;
     border-radius: 50%;
     background-color: #e2f7fb;
     padding: 10px;
@@ -368,4 +368,10 @@
 .act-btn i {
     margin-right: 6px;
     color: #1689f3;
+}
+
+@media screen and (max-width: 479px) {
+	#emails{
+		flex-basis: 100% !important;
+	}
 }
